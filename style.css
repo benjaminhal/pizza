@@ -1,0 +1,229 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff3b30;
+    padding: 15px 30px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Section héro */
+#hero {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#hero .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero .btn-primary {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#hero .btn-primary:hover {
+    transform: scale(1.1); /* Agrandissement du bouton */
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Menu */
+#menu {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 100%;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-item h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.carousel-item .price {
+    font-weight: bold;
+    color: #ff3b30;
+}
+
+/* Flèches de navigation */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Formulaire de commande */
+#order {
+    background-color: #fff;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+#order form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#order label {
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+}
+
+#order input, #order select {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+#order button {
+    background-color: #ff3b30;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#order button:hover {
+    background-color: #e60000;
+}
+
+/* Panier */
+#cart {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#cart #checkout {
+    margin-top: 20px;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    .carousel-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 28px;
+    }
+
+    #order form {
+        width: 90%;
+    }
+}
