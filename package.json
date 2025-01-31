@@ -1,0 +1,27 @@
+{
+  "name": "site-pizza",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminhal/pizza.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benjaminhal/pizza/issues"
+  },
+  "homepage": "https://github.com/benjaminhal/pizza#readme",
+  "description": ""
+}

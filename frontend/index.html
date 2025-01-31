@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Express</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+            <a href="#">Carte</a>
+            <a href="#">Panier</a>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <div class="pizza">
+            <h2>Pizza Margherita</h2>
+            <p>Tomate, mozzarella, basilic</p>
+            <button onclick="addToCart('Margherita', 10)">Commander - 10€</button>
+        </div>
+        <div class="pizza">
+            <h2>Pizza Pepperoni</h2>
+            <p>Tomate, mozzarella, pepperoni</p>
+            <button onclick="addToCart('Pepperoni', 12)">Commander - 12€</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Panier</h2>
+        <ul id="cart-items"></ul>
+        <button id="pay-btn">Payer</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Express</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+            <a href="#">Carte</a>
+            <a href="#">Panier</a>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <div class="pizza">
+            <h2>Pizza Margherita</h2>
+            <p>Tomate, mozzarella, basilic</p>
+            <button onclick="addToCart('Margherita', 10)">Commander - 10€</button>
+        </div>
+        <div class="pizza">
+            <h2>Pizza Pepperoni</h2>
+            <p>Tomate, mozzarella, pepperoni</p>
+            <button onclick="addToCart('Pepperoni', 12)">Commander - 12€</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Panier</h2>
+        <ul id="cart-items"></ul>
+        <button id="pay-btn">Payer</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
